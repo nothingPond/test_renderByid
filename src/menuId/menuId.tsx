@@ -1,3 +1,4 @@
+
 interface MenuItem {
   id: string;
   name: string;
@@ -5,6 +6,7 @@ interface MenuItem {
   children?: MenuItem[];
 }
 
+// menu management
 export const menuItems: MenuItem[] = [
   {
     id: '1',
@@ -17,6 +19,8 @@ export const menuItems: MenuItem[] = [
     link: '/About',
   }
 ];
+
+
 
 export default function MenuId() {
   return (
