@@ -1,9 +1,10 @@
+import { Grid2, Typography } from "@mui/material";
+
 const Home = () => {
   return (
-    <div>
-      <h1>Welcome to Home Page</h1>
-      <p>This is the home page of our application.</p>
-    </div>
+    <Grid2>
+      <Typography > home</Typography>
+    </Grid2>
   );
 };
 
