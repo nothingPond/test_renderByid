@@ -1,5 +1,5 @@
-import { Grid2 } from '@mui/material';
-import { menuItems } from './menuId';
+import { Grid2 } from "@mui/material";
+import { menuItems } from "./menuId";
 
 interface MenuItem {
   id: string;
@@ -40,6 +40,5 @@ export default function MenuTest() {
         ))}
       </Grid2>
     </Grid2>
-
   );
 }

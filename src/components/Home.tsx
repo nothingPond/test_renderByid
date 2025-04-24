@@ -1,5 +1,6 @@
 import { Checkbox, Grid2, Typography } from "@mui/material";
 import { useState } from "react";
+import AutocompleteCustom from "./InputComponent/AutocompleteCustom";
 
 function Home() {
   const [checked, setChecked] = useState(false);
@@ -20,6 +21,16 @@ function Home() {
             setChecked(e.target.checked);
           }}
         ></Checkbox>
+      </Grid2>
+      <Grid2>
+        <AutocompleteCustom
+          label={""}
+          data={[]}
+          value={null}
+          onChange={(value) => {
+            console.log(value);
+          }}
+        ></AutocompleteCustom>
       </Grid2>
     </>
   );
