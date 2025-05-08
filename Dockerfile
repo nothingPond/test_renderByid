@@ -6,7 +6,7 @@ COPY package*.json ./
 RUN npm install
 
 COPY . .
-RUN npm run build  # << มันจะสร้าง dist ให้ใน container
+RUN npm run build  # <<
 
 # Step 2: Serve with nginx
 FROM nginx:stable-alpine
