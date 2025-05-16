@@ -5,17 +5,23 @@ interface MenuItem {
   children?: MenuItem[];
 }
 
+// menu management
 export const menuItems: MenuItem[] = [
   {
-    id: '1',
-    name: 'Home',
-    link: '/Home',
+    id: "1",
+    name: "Home",
+    link: "/Home",
   },
   {
-    id: '2',
-    name: 'About',
-    link: '/About',
-  }
+    id: "2",
+    name: "About",
+    link: "/About",
+  },
+  {
+    id: "3",
+    name: "Profile",
+    link: "",
+  },
 ];
 
 export default function MenuId() {

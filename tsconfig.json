@@ -3,5 +3,15 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "incremental": false,    
+    "skipLibCheck": true,        
+    "noEmit": false,              
+    "isolatedModules": true,      
+    "moduleResolution": "node",   
+    "target": "ESNext",           
+    "module": "ESNext"
+  },
+  "exclude": ["node_modules", "dist"]
 }
