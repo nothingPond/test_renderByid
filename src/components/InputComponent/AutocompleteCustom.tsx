@@ -16,7 +16,7 @@ export default function AutocompleteCustom({
   return (
     <Autocomplete
       value={value}
-      onChange={(event, newValue) => {
+      onChange={(_event, newValue) => {
         onChange(newValue);
       }}
       options={data}
