@@ -36,3 +36,4 @@ function Home() {
 }
 
 export default Home;
+//  เพิ่ม rebase commit 1
