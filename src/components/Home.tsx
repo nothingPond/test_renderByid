@@ -1,54 +1,38 @@
-import { Checkbox, Grid2, Typography } from "@mui/material";
+import { Box, Button, Checkbox, Grid, Grid2 } from "@mui/material";
 import { useState } from "react";
 import AutocompleteCustom from "./InputComponent/AutocompleteCustom";
 
 function Home() {
   const [checked, setChecked] = useState(false);
 
+  const [data, setData] = useState<{ label: string; value: string }[]>([
+    { label: "Option 1", value: "option1" },
+    { label: "Option 2", value: "option2" },
+    { label: "Option 3", value: "option3" },
+  ]);
+
   return (
     <>
-      <Grid2>
-        <Typography> home</Typography>
-      </Grid2>
-      <Grid2>
-        <Checkbox
-          title="Checkbox"
-          id="checkbox"
-          name="checkbox"
-          value={checked}
-          onChange={(e) => {
-            console.log(e.target.value);
-            setChecked(e.target.checked);
-          }}
-        ></Checkbox>
-      </Grid2>
-      <Grid2>
-        <AutocompleteCustom
-          label={""}
-          data={[]}
-          value={null}
-          onChange={(value) => {
-            console.log(value);
-          }}
-        ></AutocompleteCustom>
-      </Grid2>
+      <Box
+        sx={{
+          bgcolor: "white",
+          minHeight: "100vh",
+          p: 2,
+          minWidth: "100vw",
+          marginTop: "40px",
+        }}
+      >
+        <Grid2>
+          <AutocompleteCustom
+            label="Select an option"
+            data={data}
+            value={null}
+            onChange={(value) => console.log(value)}
+          ></AutocompleteCustom>
+        </Grid2>
+      </Box>
     </>
   );
 }
 
 export default Home;
-
-//
-//
-
-// export function Home = () => {
-
-//   return (
-
-//     <>
-//
-//     </>
-//   );
-// };
-
-// export default Home;

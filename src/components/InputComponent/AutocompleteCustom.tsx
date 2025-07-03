@@ -2,7 +2,7 @@ import { TextField, Autocomplete } from "@mui/material";
 
 interface AutocompleteCustomProps {
   label: string;
-  data: [];
+  data: any;
   value: string | null;
   onChange: (value: string | null) => void;
 }

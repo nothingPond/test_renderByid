@@ -22,6 +22,11 @@ export const menuItems: MenuItem[] = [
     name: "Profile",
     link: "",
   },
+  {
+    id: "4",
+    name: "Settings",
+    link: "/form",
+  },
 ];
 
 export default function MenuId() {

@@ -19,7 +19,7 @@ export default function MenuTest() {
         width: "100%",
         backgroundColor: "white",
         zIndex: 10,
-        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+        boxShadow: "0px 4px 10px rgba(215, 210, 210, 0.1)",
         padding: "10px 0",
       }}
     >
