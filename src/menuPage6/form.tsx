@@ -1,10 +1,10 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 interface FormProps {
   controlPage?: number;
 }
 export default function Form(props: FormProps) {
-  const [typePage, setTypePage] = useState<number>(1 | 2);
+  // const [typePage, setTypePage] = useState<number>(1 | 2);
   return (
     <>
       {props.controlPage === 1 ? (

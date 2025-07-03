@@ -1,16 +1,16 @@
-import { Box, Button, Checkbox, Grid, Grid2 } from "@mui/material";
+import { Box, Grid2 } from "@mui/material";
 import { useState } from "react";
 import AutocompleteCustom from "./InputComponent/AutocompleteCustom";
 
 function Home() {
-  const [checked, setChecked] = useState(false);
+  // const [checked, setChecked] = useState<boolean>(false);
 
   const [data, setData] = useState<{ label: string; value: string }[]>([
     { label: "Option 1", value: "option1" },
     { label: "Option 2", value: "option2" },
     { label: "Option 3", value: "option3" },
   ]);
-
+  setData((prevData) => [...prevData, { label: "Option 4", value: "option4" }]);
   return (
     <>
       <Box

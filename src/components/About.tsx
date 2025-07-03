@@ -1,25 +1,20 @@
-
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
-import Paper from "@mui/material/Paper";
 import { Grid2 } from "@mui/material";
 import { useEffect, useState } from "react";
 import { API_URL } from "../api/constance";
 import axios from "axios";
 
-
-
 export default function About() {
-type User = {
-  id?: number;
-  fname?: string;
-  lname?: string;
-  username?: string;
-  avatar?: string;
-};
-  
-  const [user, setUser] = useState<User[]>([])
+  type User = {
+    id?: number;
+    fname?: string;
+    lname?: string;
+    username?: string;
+    avatar?: string;
+  };
 
+  const [user, setUser] = useState<User[]>([]);
 
   const fetchUserData = async () => {
     try {
@@ -31,13 +26,19 @@ type User = {
   };
 
   console.log(user);
-  useEffect(()=>{
+  useEffect(() => {
     fetchUserData();
-  },[])
+  }, []);
   return (
     <>
       {user.map((item, index) => (
-        <Grid2 container direction="column" spacing={1} sx={{ mt: 2 }} key={index}>
+        <Grid2
+          container
+          direction="column"
+          spacing={1}
+          sx={{ mt: 2 }}
+          key={index}
+        >
           <Grid2>
             <Avatar
               alt={item.username}
@@ -52,7 +53,7 @@ type User = {
             <Typography>
               <strong>{item.fname}:</strong>
             </Typography>
-                <Typography>
+            <Typography>
               <strong>{item.lname}:</strong>
             </Typography>
           </Grid2>
@@ -60,4 +61,4 @@ type User = {
       ))}
     </>
   );
-};
+}
