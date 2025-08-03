@@ -19,13 +19,13 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: "3",
-    name: "Profile",
-    link: "",
+    name: "Portfolio",
+    link: "/Portfolio",
   },
   {
     id: "4",
-    name: "Settings",
-    link: "/form",
+    name: "Blog",
+    link: "/Blog",
   },
 ];
 

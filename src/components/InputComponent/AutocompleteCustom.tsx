@@ -7,20 +7,15 @@ interface AutocompleteCustomProps {
   onChange: (value: string | null) => void;
 }
 
-export default function AutocompleteCustom({
-  label,
-  data,
-  value,
-  onChange,
-}: AutocompleteCustomProps) {
+export default function AutocompleteCustom(props:AutocompleteCustomProps) {
   return (
     <Autocomplete
-      value={value}
+      value={props.value}
       onChange={(_event, newValue) => {
-        onChange(newValue);
+        props.onChange(newValue);
       }}
-      options={data}
-      renderInput={(params) => <TextField {...params} label={label} />}
+      options={props.data}
+      renderInput={(params) => <TextField {...params} label={props.label} />}
     />
   );
 }
