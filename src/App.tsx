@@ -13,15 +13,24 @@ const App = () => {
       <div>
         <MenuTest />
         <Routes>
-          <Route path="/Portfolio" element={<Portfolio />} />
           <Route
-            path="/Home"
+            path="/"
             element={
-              <Grid2 container sx={{overflow: "hidden"}}>
+              <Grid2 container sx={{ overflow: "hidden" }}>
                 <Home />
               </Grid2>
             }
           />
+          <Route
+            path="/Home"
+            element={
+              <Grid2 container sx={{ overflow: "hidden" }}>
+                <Home />
+              </Grid2>
+            }
+          />
+          <Route path="/Portfolio" element={<Portfolio />} />
+
           <Route path="/about" element={<About />} />
           <Route path="/Blog" element={<Form />} />
         </Routes>
