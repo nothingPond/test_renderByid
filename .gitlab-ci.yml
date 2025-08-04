@@ -14,4 +14,4 @@ deploy-job:
   stage: deploy
   script:
    - echo "Deploy successful (placeholder)"
-# trikcer
+# 
